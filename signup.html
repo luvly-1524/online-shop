@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SignUp Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <!-- ////////////////Coding for field validation///////////////-->
+
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  var y = document.forms["myForm"]["gmail"].value;
+  if (y == ""){
+    alert("Please enter your mail id");
+    return false;
+  }
+  var z = document.forms["myForm"]["mob"].value;
+  if (z == ""){
+    alert("Please enter your phone number");
+    return false;
+  }
+  var p = document.forms["myForm"]["pwd"].value;
+  if (p == ""){
+    alert("create your password");
+    return false;
+  }
+  var q = document.forms["myForm"]["password"].value;
+  if (q == ""){
+    alert("confirm your created password");
+    return false;
+  }
+}
+
+/*function inputTypeIsSupported(field) {
+	return (field.type == "text");
+}
+
+var passedValidation = true;
+
+var emailField = document.getElementById("gmail");
+if (!inputTypeIsSupported(gmail)) {
+   //call our fallback function
+    passedValidation = validateEmail(gmail);
+}*?
+</script>
+</head>
+
+
+<body><br>
+  <br><br>
+<div class="sp">
+  <h2 style="text-align: center; color: black;margin: auto;"><b>Sign Up</b></h2><br> 
+  <form name="myForm" action="message.html" onsubmit="return validateForm()" method="post">
+  <div class="tt" style="padding: 5px; margin: auto;border: 2px solid black;"><br>
+  
+<b style="color:black;">Name:</b> <input type="text" name="fname" placeholder="Enter Name"> <br><br>
+<b style="color:black;">Email Id:</b> <input type="text" name="gmail"  placeholder="abc@gmail.com"> <br><br>
+  <b style="color:black;">Mobile No.:</b> <input type="text" name="mob"  placeholder="Mobile Number"> <br><br>
+  <b style="color:black;">Create Password:</b> <input type="password" name="pwd"  placeholder="create password"> <br><br>
+  <b style="color:black;">Confirm Password:</b> <input type="password" name="password"  placeholder="confirm password"> <br><br><br>&nbsp;&nbsp;&nbsp;
+  <input style="background-color: whitesmoke" type="submit" value="Create Account" autofocus="text-align">&nbsp;&nbsp;&nbsp;&nbsp;
+ <label><b style="color:black;">Already a user:</b></label> <a href="Login.html"><b style="color: navy;">Login</b><br>
+
+    </div>
+</form>
+</div>
+</body>
+</html>

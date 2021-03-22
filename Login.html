@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    
+    </head>
+
+<!--//////Form Validation//////// -->
+    <script>
+  function validateForm() {
+  var x = document.forms["myForm"]["Uid"].value;
+  if (x == "") {
+    alert("Please Enter your Email id to Login");
+    return false;
+  }
+  var y = document.forms["myForm"]["pwd"].value;
+  if (y == ""){
+    alert("Please Enter Valid Password");
+    return false;
+  }
+  }
+    </script>
+
+    <body>
+        <h3 style="text-align:center;color: black;">Hello, Welcome.</h3>
+        <blockquote style="text-align: center;">Happy to see you again.....! You are our <mark><q>Valuable Customer.</q></mark></blockquote>
+        <blockquote style="text-align: center;">We are here to serve you the best. Make your <q>Loved one</q> Happy. Give them a memory to smile.</blockquote>
+        <div class="lp">
+        <form name="myForm" action="home.html" onsubmit="return validateForm()" method="post">
+            <h1 style="text-align: center;">Login</h1>
+            <div style="border: 2px solid black;padding:20px; margin: auto; width: 250px;height: 150px;"><br>
+           <b style="color:black;">User Id:</b> <input type="text" name="Uid" placeholder="Enter Email Id"><br><br>
+            <b style="color:black;">Password:</b><input type="password" name="pwd" placeholder="Enter Password"><br><br><br>&nbsp;&nbsp;&nbsp;
+            <input style="background-color: whitesmoke;" type="submit" value="  Login  " autofocus="text-align">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <label><b style="color:darkmagenta;">Forgot?</b></label> <a href="reset.html"><b style="color: navy;">Password</b>
+            </div>
+            </form>
+    </body>
+    </div>
+</html>
